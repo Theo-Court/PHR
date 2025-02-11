@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageName">{{pageName}}</title>
+    <!-- link to CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--- link to JS -->
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div><H1>Insta Hack</H1></div>
+        <div class="navbar">
+        <a href="Accueil.html">Accueil</a>
+        <div class="action-buttons">
+            <!-- Connect button -->
+            <a href="inscription.html"  class="connect-button">Se connecter</a>
+            <!-- Create Account button -->
+            <a href="connexion.html" class="create-account-button">Créer un compte</a>
+        </div>
+        </div>
+    </header>
+
+    <div class="profile-header">
+        <h2 id="profileName">{{profileName}}</h2>
+        <p id="dateOfBirth">{{dateOfBirth}}</p>
+        <p id="residence">{{residence}}</p>
+        <p id="occupation">{{occupation}}</p>
+        <p id="telephone">{{telephone}}</p>
+        <p id="email">{{email}}</p>
+        <p id="relationshipStatus">{{relationshipStatus}}</p>
+        <p id="education">{{education}}</p>
+    </div>
+
+    <div class="content">
+        <h3>Publications récentes</h3>
+        <!-- Dynamic posts content -->
+        <p id="publications">{{publications}}</p>
+    </div>
+
+    <div class="footer">
+        <p>Insta Hack &copy; 2024</p>
+        <a href="#about">À propos</a> | 
+        <a href="#contact">Contact</a> | 
+        <a href="#support">Support</a>
+    </div>
+<!-- Inclure ce script dans votre fichier HTML -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Récupérez le niveau à partir de l'URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const level = urlParams.get('niveau');
+        
+        // Utilisez le niveau pour récupérer les données correspondantes
+        async function fetchData(level) {
+            try {
+                const response = await fetch(`/json/niveau${level}`);
+                const data = await response.json();
+
+        // Insérer les données récupérées dans le DOM
+        document.getElementById('pageName').textContent = data.profileName;
+        document.getElementById('profileName').textContent = data.profileName;
+        document.getElementById('dateOfBirth').textContent = data.dateOfBirth;
+        document.getElementById('residence').textContent = data.residence;
+        document.getElementById('occupation').textContent = data.occupation;
+        document.getElementById('education').textContent = data.education;
+        document.getElementById('telephone').textContent = data.contact.telephone;
+        document.getElementById('email').textContent = data.contact.email;
+        document.getElementById('relationshipStatus').textContent = data.relationshipStatus;
+        document.getElementById('publications').textContent = data.publication;
+
+        
+        const publications = document.getElementById('publications');
+                    data.publications.forEach(publication => {
+                        const publicationDiv = document.createElement('div');
+                        publicationDiv.classList.add('publication');
+
+                        const image = document.createElement('img');
+                        image.src = publication.image;
+                        image.alt = publication.type;
+
+                        const caption = document.createElement('p');
+                        caption.textContent = publication.caption;
+
+                        publicationDiv.appendChild(image);
+                        publicationDiv.appendChild(caption);
+
+                        publications.appendChild(publicationDiv);
+                    });
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+            }
+
+    // Vérifiez si le niveau est présent dans l'URL
+            if (level) {
+                // Appelez la fonction fetchData avec le niveau récupéré
+                fetchData(level);
+            } else {
+                console.error('Le niveau n\'a pas été spécifié dans l\'URL.');
+            }
+        });
+    </script>
+  
+      
+</body>
+</html>

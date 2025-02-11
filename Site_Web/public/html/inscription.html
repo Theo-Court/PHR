@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="/css/style_ins_con.css">
+    <script src="/js/script.js" defer></script>
+
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Insta Hack</h1>
+        <div class="navbar">
+            <a href="template.html" class="Back-bt">Retour</a>
+        </div>
+    </header>
+    
+    
+    <div class="wrapper">
+        <h1>Inscription</h1>
+        <form action="">
+            <span>UserName</span>
+            <input type="text" name="UserName" id="UserName">
+            <span>Email</span>
+            <input type="email" name="Email" id="Email">
+            <div class="password-container">
+                <span>Password</span>
+                <input type="password" name="password" id="password">
+                <button type="button" id="togglePassword">Show</button>
+                <button type="button" id="passwordRules">Password Rules</button>
+                <br>
+                <br>
+            </div>
+            <input type="submit" value="S'inscrire">
+            <p class="already-registered">Déjà inscrit? <a href="connexion.html" class="connect-button" >Connectez-vous</a></p>
+        </form>
+    </div>
+   
+    <script>
+        // Function to toggle password visibility
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('password');
+            const toggleButton = document.getElementById('togglePassword');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleButton.textContent = 'Hide';
+            } else {
+                passwordInput.type = 'password';
+                toggleButton.textContent = 'Show';
+            }
+        }
+
+        // Event listener for the toggle button
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            togglePasswordVisibility();
+        });
+
+        // Function to display password creation rules based on niveau
+        function displayPasswordRules(niveau) {
+            let rules;
+            switch (niveau) {
+                case '1':
+                    // At least 9 characters
+                    // At least one uppercase letter
+                    // At least one lowercase letter
+                        rules='Le mot de passe doit contenir 9 caractères et contenir au moins une majuscule et une minuscule.'
+                    break;
+                case '2':
+                    // At least 11 characters
+                    // At least one uppercase letter
+                    // At least one lowercase letter
+                    // At least one digit
+                        rules='Le mot de passe doit contenir 11 caractères et contenir au moins une majuscule , au moins une minuscule et au moins un digit.'
+                    break;
+                    case '3':
+                    // At least 17 characters
+                    // At least one uppercase letter
+                    // At least one lowercase letter
+                    // At least one digit
+                    // At least one  special character
+                        rules='Le mot de passe doit contenir 17 caractères et contenir au moins une majuscule , au moins une minuscule , au moins un digit et au moins un caractère spécial.'
+                    break;
+                    case '4':
+                    // At least 15 characters
+                    // At least one uppercase letter
+                    // At least one lowercase letter
+                    // At least one digit
+                    // At least one digit
+                    // At least one  special character
+                        rules='Le mot de passe doit contenir 15 caractères et contenir au moins une majuscule , au moins une minuscule , au moins un digit et au moins un caractère spécial.'
+                    break;
+                default:
+                    alert('Invalid niveau.');
+            }
+            alert(rules);
+        }
+
+        // Event listener for the password rules button
+        document.getElementById('passwordRules').addEventListener('click', function() {
+            const params = new URLSearchParams(window.location.search);
+            const niveau = params.get('niveau');
+            displayPasswordRules(niveau);
+        });
+
+        // Function to check password validity based on niveau
+        function checkPasswordValidity(niveau) {
+            const passwordInput = document.getElementById('password');
+            const passwordValue = passwordInput.value;
+
+            switch (niveau) {
+                case '1':
+                    // At least 9 characters
+                    // At least one uppercase letter
+                    // At least one lowercase letter
+                    const passwordRegex1 = /^(?=.*[a-z])(?=.*[A-Z]).{9,}$/;
+                    if (passwordRegex1.test(passwordValue)) {
+                        alert('Password meets level 1 requirements.');
+                    } else {
+                        alert('Le mot de passe doit contenir 9 caractères et contenir au moins une majuscule et une minuscule.');
+                    }
+                    break;
+                case '2':
+                    // At least 11 characters
+                    // At least one uppercase letter
+                    // At least one lowercase letter
+                    // At least one digit
+                    const passwordRegex2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{11,}$/;
+                    if (passwordRegex2.test(passwordValue)) {
+                        alert('Password meets level 2 requirements.');
+                    } else {
+                        alert('Le mot de passe doit contenir 11 caractères et contenir au moins une majuscule , une minuscule et un digit.');
+                    }
+                    break;
+                    case '3':
+                    // At least 17 characters
+                    // At least one uppercase letter
+                    // At least one lowercase letter
+                    // At least one digit
+                    // At least one  special character
+                    const passwordRegex3 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!_@#$%^&*()]).{17,}$/;
+                    if (passwordRegex3.test(passwordValue)) {
+                        alert('Password meets level 3 requirements.');
+                    } else {
+                        alert('Le mot de passe doit contenir 17 caractères et contenir au moins une majuscule , une minuscule , un digit et un caractère spécial.');
+                    }
+                    break;
+                    case '4':
+                    // At least 15 characters
+                    // At least one uppercase letter
+                    // At least one lowercase letter
+                    // At least one digit
+                    // At least one digit
+                    // At least one  special character
+                    const passwordRegex4 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!_@#$%^&*()]).{15,}$/;
+                    if (passwordRegex4.test(passwordValue)) {
+                        alert('Password meets level 4 requirements.');
+                    } else {
+                        alert('Le mot de passe doit contenir 15 caractères et contenir au moins une majuscule , une minuscule , un digit et un caractère spécial.');
+                    }
+                    break;
+                default:
+                    alert('Invalid niveau.');
+            }
+        }
+
+        // Form submission event listener
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const params = new URLSearchParams(window.location.search);
+            const niveau = params.get('niveau');
+            checkPasswordValidity(niveau);
+        });
+    </script>
+</body>
+</html>

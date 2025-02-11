@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../css/style_ins_con.css">
+    <script src="/js/script.js" defer></script>
+    <script src="/js/verife.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Insta Hack</h1>
+        <div class="navbar">
+            <a href="template.html" class="Back-bt">Retour</a>
+        </div>
+    </header>
+    
+    
+    <div class="wrapper">
+        <h1>Connexion</h1>
+        <form id="loginForm" action="">
+            <span>UserName</span>
+            <input type="text" name="UserName" id="UserName">
+            <span>Password</span>
+            <input type="password" name="password" id="password">
+            <button type="button" id="togglePassword">Show</button>
+            <br>
+            <br>
+            <input id="loginButton" type="submit" value="Se connecter">
+            <p class="First-Time">Nouveau sur la platforme ? <a href="connexion.html" class="create-account-button">Inscrivez-vous</a></p>
+        </form>
+    </div>
+    <script>
+        // Function to toggle password visibility
+        function togglePasswordVisibility() {
+                const passwordInput = document.getElementById('password');
+                const toggleButton = document.getElementById('togglePassword');
+
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    toggleButton.textContent = 'Hide';
+                } else {
+                    passwordInput.type = 'password';
+                    toggleButton.textContent = 'Show';
+                }
+            }
+
+            // Event listener for the toggle button
+            document.getElementById('togglePassword').addEventListener('click', function() {
+                togglePasswordVisibility();
+            });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+Créer un site qui style Insta  (nommé Insta Hack)
+Cacher des info dans les metadata et dans l'image ( mot de  passe et identifiant)
+plusieurs profil différents niveaux de difficulté
+
+les Comptes 2, 3 et 4 sont privés il  faut donc réussir à accéder au premier compte pour accéder au suivant 
+
+profil 1
+
+identifiant=nom du  compte sur la page
+Mot de passe cacher dans l'image 
+
+profil 2
+le nom marqué sur le compte n'est pas l'identifiant
+identifiant caché dans metadata
+mot de passe cacher dans l'image 
+
+profil 3
+le nom marqué sur le compte n'est pas l'identifiant
+Plusieurs images
+chaque image possède des metadata diff (plusieurs identifiant mais un seul bon)
+chaque image possède une info cacher dans l'image
+
+profil 4
+le nom marqué sur le compte n'est pas l'identifiant
+Plusieurs images
+chaque image possède des metadata diff (plusieurs identifiant mais un seul bon)
+chaque image possède une info cacher dans l'image( chaque info est necessaire pour trouver le mot de passe)
+
+
+trouver une preuve pour la réussite du challenge
+chaque profil donne une partie de la preuve qui prouve la réussite du challenge
+
+indice:
+regarder metadata image
+donner lien vers un site qui explique comment cacher du texte dans l'image 
+table ascii

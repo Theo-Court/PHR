@@ -1,0 +1,19 @@
+Profil 1:
+Identifiant : Visible directement sur la page (ex: Etudiant_Aurillac).
+Mot de passe : Caché dans l’image de profil avec stéganographie simple (ex: MotDePasse123 caché dans les pixels avec un outil comme StegHide).
+Indice : Un message du type "Regarde bien l’image..."
+
+Profil 2:
+Identifiant : Caché dans les métadonnées EXIF d’une photo (ex: UCA_Hacker).
+Mot de passe : Caché dans une image (stéganographie).
+Indice : Un post ou une description qui dit "Chaque image a son secret".
+
+Profil 3:
+Identifiant : Plusieurs images postées avec des métadonnées EXIF différentes, seul un des identifiants est correct (ex: H4ckM3 dans une seule des images).
+Mot de passe : Chaque image contient une info cachée dans l’image (stéganographie), mais seul un assemblage des infos permet de reconstituer le mot de passe (ex: PA55_ + W0RD).
+Indice : Un post avec "Une seule clé ouvre la porte, mais laquelle ?".
+
+Profil 4
+Identifiant : Caché dans les métadonnées d’une des images, plusieurs faux identifiants dans d’autres images.
+Mot de passe : Chaque image contient une info cachée dans l’image via stéganographie. Toutes ces infos sont nécessaires pour trouver le mot de passe (ex: un code ASCII dissimulé qui, une fois traduit, donne UltimateH4ck3r).
+Indice : Un post avec une référence au Dark Web (ex: "Dans l’ombre, la vérité se cache").

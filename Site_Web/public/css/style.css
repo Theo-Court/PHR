@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rochester&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: transparent;
+    color: black;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.profile-header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+div.publication{
+    width: 75%;
+}
+div.publication  img{
+    width: 50vw;
+}
+.content {
+    padding: 20px;
+}
+
+.post {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    color: #888;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+header {
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(253,198,3,1) 35%, rgba(255,105,0,1) 100%);
+    color: black;
+    padding: 10px 20px;
+}
+
+.action-buttons {
+    text-align: right;
+}
+
+/* Modified style for h1 */
+h1 {
+    font-family: "Rochester", serif;
+    font-weight: 400;
+    font-style: normal; /* Making the header text bold */
+    color: black; /* Dark color for contrast */
+    margin-bottom: 20px; /* Spacing below the h1 element */
+}
+
+.consigne {
+    color: lime; 
+    background-color: black; 
+    font-family: 'Courier New', monospace;
+     white-space: pre-wrap; 
+     padding: 20px; 
+     margin: 20px;
+    }

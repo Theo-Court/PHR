@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #282c34;
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    flex-direction: column; 
+}
+
+.title h1 {
+    font-size: 2em; 
+    color: #76b852; 
+}
+
+.button {
+    padding: 25px 50px; 
+    font-size: 20px; 
+    border: none;
+    border-radius: 40%;
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Couleurs pour chaque niveau */
+.niv1 {
+    background-color: #4CAF50; 
+} 
+
+
+
+.niv2 {
+    background-color: #f7e32f; 
+}
+
+
+.niv3 {
+    background-color: #FF9800; 
+}
+
+
+
+.niv4 {
+    background-color: #F44336; 
+}
+
+/* Neon effect for niv1 button */
+.niv1:hover, .niv1.neon-border:after {
+    animation: neon-effect-niv1 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-effect-niv1 {
+    0% {
+        box-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 30px #4CAF50, 0 0 40px #4CAF50, 0 0 70px #4CAF50, 0 0 80px #4CAF50, 0 0 100px #4CAF50, 0 0 150px #4CAF50;
+    }
+    100% {
+        box-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50, 0 0 15px #4CAF50, 0 0 20px #4CAF50, 0 0 35px #4CAF50, 0 0 40px #4CAF50, 0 0 50px #4CAF50, 0 0 75px #4CAF50;
+    }
+}
+
+/* Neon effect for niv2 button */
+.niv2:hover, .niv2.neon-border:after {
+    animation: neon-effect-niv2 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-effect-niv2 {
+    0% {
+        box-shadow: 0 0 10px #f7e32f, 0 0 20px #f7e32f, 0 0 30px #f7e32f, 0 0 40px #f7e32f, 0 0 70px #f7e32f, 0 0 80px #f7e32f, 0 0 100px #f7e32f, 0 0 150px #f7e32f;
+    }
+    100% {
+        box-shadow: 0 0 5px #f7e32f, 0 0 10px #f7e32f, 0 0 15px #f7e32f, 0 0 20px #f7e32f, 0 0 35px #f7e32f, 0 0 40px #f7e32f, 0 0 50px #f7e32f, 0 0 75px #f7e32f;
+    }
+}
+
+/* Neon effect for niv3 button */
+.niv3:hover, .niv3.neon-border:after {
+    animation: neon-effect-niv3 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-effect-niv3 {
+    0% {
+        box-shadow: 0 0 10px #FF9800, 0 0 20px #FF9800, 0 0 30px #FF9800, 0 0 40px #FF9800, 0 0 70px #FF9800, 0 0 80px #FF9800, 0 0 100px #FF9800, 0 0 150px #FF9800;
+    }
+    100% {
+        box-shadow: 0 0 5px #FF9800, 0 0 10px #FF9800, 0 0 15px #FF9800, 0 0 20px #FF9800, 0 0 35px #FF9800, 0 0 40px #FF9800, 0 0 50px #FF9800, 0 0 75px #FF9800;
+    }
+}
+
+/* Neon effect for niv4 button */
+.niv4:hover, .niv4.neon-border:after {
+    animation: neon-effect-niv4 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-effect-niv4 {
+    0% {
+        box-shadow: 0 0 10px #F44336, 0 0 20px #F44336, 0 0 30px #F44336, 0 0 40px #F44336, 0 0 70px #F44336, 0 0 80px #F44336, 0 0 100px #F44336, 0 0 150px #F44336;
+    }
+    100% {
+        box-shadow: 0 0 5px #F44336, 0 0 10px #F44336, 0 0 15px #F44336, 0 0 20px #F44336, 0 0 35px #F44336, 0 0 40px #F44336, 0 0 50px #F44336, 0 0 75px #F44336;
+    }
+}
+
+
+.consigne {
+    color: lime; 
+    background-color: black; 
+    border: 2px solid white;
+    text-align: justify;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap; 
+    padding: 20px; 
+    margin: 20px;
+    }

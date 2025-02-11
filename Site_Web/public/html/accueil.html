@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil - Choisissez votre Niveau</title>
+    <link rel="stylesheet" href="/css/button.css">
+
+    
+</head>
+<body>
+
+
+
+
+    <div class="consigne">
+        <p><strong>Consigne :</strong> Votre objectif est de débloquer les différents profils en trouvant les identifiants et mots de passe cachés. Pour progresser, vous devez analyser les métadonnées et le contenu des images. Chaque profil apporte un niveau de difficulté supplémentaire.</p>
+        <p>Indice général : Vérifiez les métadonnées des images et explorez le contenu caché dans celles-ci.</p>
+    </div>
+    <div class="title">
+        <h1>Choisissez votre Niveau de Difficulté</h1>
+    </div>
+
+    <div>
+        <button data-level="1" class="button niv1 neon-border">Niveau 1</button>
+        <button data-level="2" class="button niv2 neon-border">Niveau 2</button>
+        <button data-level="3" class="button niv3 neon-border">Niveau 3</button>
+        <button data-level="4" class="button niv4 neon-border">Niveau 4</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll("button[data-level]");
+            buttons.forEach((button, index) => {
+                const level = parseInt(button.getAttribute("data-level"), 10);
+                if (level > 1 && localStorage.getItem(`level${level-1}Completed`) !== 'true') {
+                    button.disabled = true;
+                    button.innerHTML = `<img src="../img/cadena.png" style="width:20px;height:20px;"> Niveau ${level}`;
+                } else {
+                    button.disabled = false;
+                    button.innerHTML = `Niveau ${level}`;
+                }
+                
+                button.addEventListener("click", () => {
+                    if (!button.disabled) {
+                        window.location.href = `../../template.html?niveau=${level}`;
+                    } else {
+                        alert('Il ne faut pas confondre vitesse et précipitation');
+                    }
+                });
+            });
+        
+        });
+// Fonction pour récupérer le secret depuis le serveur (a modifier pour le .config)
+async function fetchSecret() {
+    try {
+        const response = await fetch('/server/json/config'); 
+        if (response.ok) {
+            const { secret } = await response.json();
+            alert(`Le secret est : ${secret}`);
+        } else {
+            throw new Error('Impossible de récupérer le secret');
+        }
+    } catch (error) {
+        console.error('Erreur:', error);
+    }
+}
+    </script>
+</body>
+</html>

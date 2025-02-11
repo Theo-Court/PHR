@@ -1,0 +1,20 @@
+{
+  "profileName": "Richter Belmont",
+  "dateOfBirth": "29/10/1993",
+  "residence": "Valachie",
+  "contact": {
+    "telephone": "",
+    "email": ""
+  },
+  "relationshipStatus": "En couple avec Annette Belmont",
+  "occupation": "Chasseur de Vampire",
+  "education":"",
+  "publications": [
+    {
+      "type": "Meme sur Dracula",
+      "image": "/img/BelmontClan.png",
+      "caption": "#Belmont #VampireKiller #MeAndTheClan"
+    }
+  ],
+  "password": "9f63bfc6d1a331a09b8fabf03f3c43fe"
+}

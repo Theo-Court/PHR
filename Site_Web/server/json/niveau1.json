@@ -1,0 +1,20 @@
+{
+  "profileName": "Donkey Kong",
+  "dateOfBirth": "09/07/1981",
+  "residence": "Île Kongo",
+  "contact": {
+    "telephone": "",
+    "email": ""
+  },
+  "relationshipStatus": "",
+  "occupation": "",
+  "education":"",
+  "publications": [
+    {
+      "type": "Photo avec Diddy Kong",
+      "image": "/img/Profil 1, la balade de diddy.jpeg",
+      "caption": "En balade avec mon nouvel animal de compagnie, un petit ouistiti que j'ai nommé Diddy kong ! vous trouvez pas qu'il est trop choupi ? :D"
+    }
+  ],
+  "password": "d971ec8d008013221ce9c75de51010aa"
+}

@@ -1,0 +1,25 @@
+{
+  "profileName": "Ren Amamiya",
+  "dateOfBirth": "15/09/2016",
+  "residence": "Tokyo",
+  "contact": {
+    "telephone": "",
+    "email": ""
+  },
+  "relationshipStatus": "En couple avec Makoto Nijima",
+  "occupation": "Etudiant",
+  "education":"",
+  "publications": [
+    {
+      "type": "Photo du cosplay des Phantom Thieves",
+      "image": "/img/PhantomThieves.jpg",
+      "caption": "05/05/2024 : En cavale à l’#AnimeJapan avec le crew ! #PhantomThieves"
+    },
+    {
+      "type": "",
+      "image": "Aucune",
+      "caption": "18/06/2018 : Pour fêter notre sixième anniversaire de couple, on va sortir le grand jeu ! Champagne, fleurs et dîners aux chandelles !! … ou bien juste Netflix&Chill. Probablement Netflix&Chill #6ans #GrosFlemmards"
+    }
+  ],
+  "password": "5292ea23c173f92fc54e0e7c32e3beae"
+}
