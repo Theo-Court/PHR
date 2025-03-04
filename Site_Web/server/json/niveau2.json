@@ -1,20 +1,24 @@
 {
-  "profileName": "Richter Belmont",
-  "dateOfBirth": "29/10/1993",
-  "residence": "Valachie",
-  "contact": {
-    "telephone": "",
-    "email": ""
-  },
-  "relationshipStatus": "En couple avec Annette Belmont",
-  "occupation": "Chasseur de Vampire",
-  "education":"",
+  "profileName": "Fred",
+  "profileImage":"/img/Profil 2 (FNAF)/Profil Picture.jpg",
   "publications": [
     {
-      "type": "Meme sur Dracula",
-      "image": "/img/BelmontClan.png",
-      "caption": "#Belmont #VampireKiller #MeAndTheClan"
+      "type": "Image Film FNAF",
+      "image": "/img/Profil 2 (FNAF)/five-nights_header-mobile.jpg",
+      "caption": "#FNAF_mobile"
+    },
+    {
+      "type": "Date d'obtention de son permis avec photo",
+      "image": "/img/Profil 2 (FNAF)/Fnaf_film.jpg",
+      "caption": "#FNAF_film"
+    },
+    {
+      "type": "Date d'obtention de son permis avec photo",
+      "image": "/img/Profil 2 (FNAF)/fnaf-security-breach-funko-peluche-18cm-firework-freddy.jpg",
+      "caption": "Serez-vous capable de réunir mes pièces du puzzle ?"
     }
   ],
-  "password": "9f63bfc6d1a331a09b8fabf03f3c43fe"
+  "indice":"Des informations sont cachées dans les metadonnées et dans les images",
+  "Username":"UCA_Hacker",
+  "password": "b6925f9a6ba12f66ac192bd955434336"
 }

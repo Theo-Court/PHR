@@ -1,20 +1,14 @@
 {
-  "profileName": "Donkey Kong",
-  "dateOfBirth": "09/07/1981",
-  "residence": "Île Kongo",
-  "contact": {
-    "telephone": "",
-    "email": ""
-  },
-  "relationshipStatus": "",
-  "occupation": "",
-  "education":"",
+  "profileName": "Etudiant_Aurillac",
+  "profileImage":"/img/Profil 1 (Nike Basket)/Profil Picture.jpg",
   "publications": [
     {
-      "type": "Photo avec Diddy Kong",
-      "image": "/img/Profil 1, la balade de diddy.jpeg",
-      "caption": "En balade avec mon nouvel animal de compagnie, un petit ouistiti que j'ai nommé Diddy kong ! vous trouvez pas qu'il est trop choupi ? :D"
+      "type": "Ma nouvelle paire de de Nike",
+      "image": "/img/Profil 1 (Nike Basket)/sneakers-5578127_1920.jpg",
+      "caption": "Faite toujours attention aux infos présente sur vos photo"
     }
   ],
-  "password": "d971ec8d008013221ce9c75de51010aa"
+  "indice":"Le mot de passe a été cacher à l'intérieur de l'image",
+  "Username":"Etudiant_Aurillac",
+  "password": "c7875139b45b9e99c320ac1c9f252bc0"
 }

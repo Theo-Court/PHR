@@ -1,35 +1,35 @@
 {
-  "profileName": "Steve",
-  "dateOfBirth": "18/11/2011",
-  "residence": "Overworld",
-  "contact": {
-    "telephone": "07 62 20 30 17",
-    "email": "steve.alex@mojang.com"
-  },
-  "relationshipStatus": "En couple avec Alex",
-  "occupation": "Auto entrepreneur",
-  "education": "mineur, charpentier, électricien, agriculteur, verrier, maçon, pêcheur, chasseur, chimiste, pyrotechnicien, forgeron, forestier à polytechnique",
+  "profileName": "Ezio",
+  "profileImage":"/img/Profile 4 (Pizza)/Profil Picture.jpg",
   "publications": [
     {
-      "type": "Photo de son film préféré",
-      "image": "/img/Filmfavoris.jpg",
-	  "caption": "09/12/2023 : J'ai revu pour la centième fois le film Cast Away et c'est toujours un banger absolu, mon film préféré de loin !!"
+      "type": "",
+      "image": "/img/Profile 4 (Pizza)/italian-cuisine-6853411_1920.jpg",
+	  "caption": ""
     },
     {
-      "type": "Date d'obtention de son permis avec photo",
-      "image": "/img/permissteeve.jpeg",
-      "caption": "06/01/2024 : Je viens d'obtenir mon permis de conduire, attention ça va rider !"
+      "type": "",
+      "image": "/img/Profile 4 (Pizza)/pizza-1202775_1920.jpg",
+      "caption": ""
     },
     {
-      "type": "Photo avec sa petite amie",
-      "image": "/img/stevealexsonamoureux.jpg",
-      "caption": "24/02/2024 : Avec Alex en détente après une bonne journée à s'occuper de la ferme, ça fais du bien"
+      "type": "",
+      "image": "/img/Profile 4 (Pizza)/cheese-164872_1920.jpg",
+      "caption": ""
     },
     {
-      "type": "Photo en vacances dans un biome stylé",
-      "image": "/img/vacances.png",
-      "caption": "12/05/2024 : Lors de mon voyage en égypte j'ai trouver un super spot pour me la couler douce vous trouvez pas !"
+      "type": "",
+      "image": "/img/Profile 4 (Pizza)/pizza-2619013_1920.jpg",
+      "caption": ""
+    },
+    {
+      "type": "",
+      "image": "/img/Profile 4 (Pizza)/pizza-5311269_1920.jpg",
+      "caption": ""
     }
   ],
-  "password": "119952a0382be095c32d0a84c1666110"
+  "indice":"Vous aurrez besoin d'une table ASCII",
+  "Username":"The_Stat_Expert",
+  "password": "7a9faeb2cd852a84f8277bec63ce54e1",
+  "secret":"SAE 6-04"
 }

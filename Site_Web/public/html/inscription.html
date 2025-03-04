@@ -12,7 +12,7 @@
     <header class="site-header">
         <h1 class="site-title">Insta Hack</h1>
         <div class="navbar">
-            <a href="template.html" class="Back-bt">Retour</a>
+            
         </div>
     </header>
     
@@ -35,6 +35,7 @@
             <input type="submit" value="S'inscrire">
             <p class="already-registered">Déjà inscrit? <a href="connexion.html" class="connect-button" >Connectez-vous</a></p>
         </form>
+        <a href="template.html" class="Back-bt">Retour</a>
     </div>
    
     <script>
@@ -65,14 +66,14 @@
                     // At least 9 characters
                     // At least one uppercase letter
                     // At least one lowercase letter
-                        rules='Le mot de passe doit contenir 9 caractères et contenir au moins une majuscule et une minuscule.'
+                        rules='Le mot de passe doit contenir 12 caractères et contenir au moins une majuscule, une minuscule et un chiffre.'
                     break;
                 case '2':
                     // At least 11 characters
                     // At least one uppercase letter
                     // At least one lowercase letter
                     // At least one digit
-                        rules='Le mot de passe doit contenir 11 caractères et contenir au moins une majuscule , au moins une minuscule et au moins un digit.'
+                        rules='Le mot de passe doit contenir 33 caractères et contenir au moins une majuscule , au moins une minuscule et au moins un digit.'
                     break;
                     case '3':
                     // At least 17 characters
@@ -80,7 +81,7 @@
                     // At least one lowercase letter
                     // At least one digit
                     // At least one  special character
-                        rules='Le mot de passe doit contenir 17 caractères et contenir au moins une majuscule , au moins une minuscule , au moins un digit et au moins un caractère spécial.'
+                        rules='Le mot de passe doit contenir 28 caractères et contenir au moins une majuscule , au moins une minuscule , au moins un digit et au moins un caractère spécial.'
                     break;
                     case '4':
                     // At least 15 characters
@@ -89,7 +90,7 @@
                     // At least one digit
                     // At least one digit
                     // At least one  special character
-                        rules='Le mot de passe doit contenir 15 caractères et contenir au moins une majuscule , au moins une minuscule , au moins un digit et au moins un caractère spécial.'
+                        rules='Le mot de passe doit contenir 41 caractères et contenir au moins une majuscule , au moins une minuscule , au moins un digit et au moins un caractère spécial.'
                     break;
                 default:
                     alert('Invalid niveau.');
@@ -118,7 +119,7 @@
                     if (passwordRegex1.test(passwordValue)) {
                         alert('Password meets level 1 requirements.');
                     } else {
-                        alert('Le mot de passe doit contenir 9 caractères et contenir au moins une majuscule et une minuscule.');
+                        alert('Le mot de passe doit contenir 12 caractères et contenir au moins une majuscule et une minuscule.');
                     }
                     break;
                 case '2':
@@ -130,7 +131,7 @@
                     if (passwordRegex2.test(passwordValue)) {
                         alert('Password meets level 2 requirements.');
                     } else {
-                        alert('Le mot de passe doit contenir 11 caractères et contenir au moins une majuscule , une minuscule et un digit.');
+                        alert('Le mot de passe doit contenir 33 caractères et contenir au moins une majuscule , une minuscule et un digit.');
                     }
                     break;
                     case '3':
@@ -143,7 +144,7 @@
                     if (passwordRegex3.test(passwordValue)) {
                         alert('Password meets level 3 requirements.');
                     } else {
-                        alert('Le mot de passe doit contenir 17 caractères et contenir au moins une majuscule , une minuscule , un digit et un caractère spécial.');
+                        alert('Le mot de passe doit contenir 28 caractères et contenir au moins une majuscule , une minuscule , un digit et un caractère spécial.');
                     }
                     break;
                     case '4':
@@ -157,7 +158,7 @@
                     if (passwordRegex4.test(passwordValue)) {
                         alert('Password meets level 4 requirements.');
                     } else {
-                        alert('Le mot de passe doit contenir 15 caractères et contenir au moins une majuscule , une minuscule , un digit et un caractère spécial.');
+                        alert('Le mot de passe doit contenir 41 caractères et contenir au moins une majuscule , une minuscule , un digit et un caractère spécial.');
                     }
                     break;
                 default:

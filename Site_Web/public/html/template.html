@@ -11,29 +11,29 @@
 </head>
 <body>
     <header>
-        <div><H1>Insta Hack</H1></div>
+        <div> <a href="Accueil.html"><H1>Insta Hack</H1></a></div>
         <div class="navbar">
-        <a href="Accueil.html">Accueil</a>
         <div class="action-buttons">
             <!-- Connect button -->
-            <a href="inscription.html"  class="connect-button">Se connecter</a>
+            <a href="connexion.html"  class="connect-button">Se connecter</a>
             <!-- Create Account button -->
-            <a href="connexion.html" class="create-account-button">Créer un compte</a>
+            <a href="inscription.html" class="create-account-button">Créer un compte</a>
         </div>
         </div>
     </header>
 
     <div class="profile-header">
+        <img id="profileImage" src="" alt="Image de profil" class="profile-image">
         <h2 id="profileName">{{profileName}}</h2>
-        <p id="dateOfBirth">{{dateOfBirth}}</p>
-        <p id="residence">{{residence}}</p>
-        <p id="occupation">{{occupation}}</p>
-        <p id="telephone">{{telephone}}</p>
-        <p id="email">{{email}}</p>
-        <p id="relationshipStatus">{{relationshipStatus}}</p>
-        <p id="education">{{education}}</p>
     </div>
 
+    <button id="hintButton">Afficher un indice</button>
+    <div id="hintPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <p id="hintText">Voici un indice !</p>
+        </div>
+    </div>
     <div class="content">
         <h3>Publications récentes</h3>
         <!-- Dynamic posts content -->
@@ -41,7 +41,7 @@
     </div>
 
     <div class="footer">
-        <p>Insta Hack &copy; 2024</p>
+        <p>Insta Hack &copy; 2025</p>
         <a href="#about">À propos</a> | 
         <a href="#contact">Contact</a> | 
         <a href="#support">Support</a>
@@ -62,14 +62,9 @@
         // Insérer les données récupérées dans le DOM
         document.getElementById('pageName').textContent = data.profileName;
         document.getElementById('profileName').textContent = data.profileName;
-        document.getElementById('dateOfBirth').textContent = data.dateOfBirth;
-        document.getElementById('residence').textContent = data.residence;
-        document.getElementById('occupation').textContent = data.occupation;
-        document.getElementById('education').textContent = data.education;
-        document.getElementById('telephone').textContent = data.contact.telephone;
-        document.getElementById('email').textContent = data.contact.email;
-        document.getElementById('relationshipStatus').textContent = data.relationshipStatus;
+        document.getElementById('profileImage').src = data.profileImage;
         document.getElementById('publications').textContent = data.publication;
+        document.getElementById('hintText').textContent = data.indice;
 
         
         const publications = document.getElementById('publications');
@@ -101,6 +96,23 @@
             } else {
                 console.error('Le niveau n\'a pas été spécifié dans l\'URL.');
             }
+        // Gestion de la popup d'indice
+        const hintButton = document.getElementById("hintButton");
+            const hintPopup = document.getElementById("hintPopup");
+            const closeButton = document.querySelector(".close-button");
+            
+            hintButton.addEventListener("click", () => {
+                hintPopup.style.display = "block";
+            });
+            
+            closeButton.addEventListener("click", () => {
+                hintPopup.style.display = "none";
+            });
+
+            // Afficher le bouton après 15 minutes (900000 ms)
+            setTimeout(() => {
+                hintButton.style.display = "block";
+            }, 90);
         });
     </script>
   

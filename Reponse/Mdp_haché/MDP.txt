@@ -1,7 +1,22 @@
 Haché grâce a la focntionnde hachage MD5
 
+Profil 1 
+username: Etudiant_Aurillac
+password: MotDePasse123
+Haché : c7875139b45b9e99c320ac1c9f252bc0
 
-DiddyKong : d971ec8d008013221ce9c75de51010aa
-Belmont1993 : 9f63bfc6d1a331a09b8fabf03f3c43fe
-Makoto_18_06_2018 : 5292ea23c173f92fc54e0e7c32e3beae
-St3veC@stAway11 : 119952a0382be095c32d0a84c1666110
+Profil 2
+username: UCA_Hacker
+password: P3nT3sT,Hacking3TR3nforc3m3nT2025
+Haché: b6925f9a6ba12f66ac192bd955434336
+
+Profil 3
+username: DataTrust
+password: D33pL3arning3tMachin3L3arning
+Haché: 2c6f1a54173c7f6ef039e2c5fe35d62a
+
+Profil 2
+username: The_Stat_Expert
+password: Règlement général sur la protection des données
+Password ASCII: 82 195 168 103 108 101 109 101 110 116 32 103 195 169 110 195 169 114 97 108 32 115 117 114 32 108 97 32 112 114 111 116 101 99 116 105 111 110 32 100 101 115 32 100 111 110 110 195 169 101 115
+Haché: 7a9faeb2cd852a84f8277bec63ce54e1

@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loginForm.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent form from submitting
             // Example validation: check if the email input is not empty
-            const email = document.querySelector('#email').value; // Assuming there's an input with id="email"
+            const username = document.querySelector('#email').value; // Assuming there's an input with id="email"
             if (!email) {
                 alert('Please enter your email.');
                 return;

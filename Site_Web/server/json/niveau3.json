@@ -1,25 +1,24 @@
 {
-  "profileName": "Ren Amamiya",
-  "dateOfBirth": "15/09/2016",
-  "residence": "Tokyo",
-  "contact": {
-    "telephone": "",
-    "email": ""
-  },
-  "relationshipStatus": "En couple avec Makoto Nijima",
-  "occupation": "Etudiant",
-  "education":"",
+  "profileName": "Lorax",
+  "profileImage":"/img/Profile 3 (Forêt)/Profil Picture.jpg",
   "publications": [
     {
-      "type": "Photo du cosplay des Phantom Thieves",
-      "image": "/img/PhantomThieves.jpg",
-      "caption": "05/05/2024 : En cavale à l’#AnimeJapan avec le crew ! #PhantomThieves"
+      "type": "Photo paysage",
+      "image": "/img/Profile 3 (Forêt)/alpine-6944487_1920.jpg",
+      "caption": "Beautiful view"
+    },
+    {
+      "type": "Champignon",
+      "image": "/img/Profile 3 (Forêt)/mushroom-8512804_1920.jpg",
+      "caption": "Qui qu'en veut, des champipi, des champignons?!"
     },
     {
       "type": "",
-      "image": "Aucune",
-      "caption": "18/06/2018 : Pour fêter notre sixième anniversaire de couple, on va sortir le grand jeu ! Champagne, fleurs et dîners aux chandelles !! … ou bien juste Netflix&Chill. Probablement Netflix&Chill #6ans #GrosFlemmards"
+      "image": "/img/Profile 3 (Forêt)/trees-4296305_1920.jpg",
+      "caption": ""
     }
   ],
-  "password": "5292ea23c173f92fc54e0e7c32e3beae"
+  "indice":"Des informations sont cachées dans les metadonnées",
+  "Username":"DataTrust",
+  "password": "2c6f1a54173c7f6ef039e2c5fe35d62a"
 }
